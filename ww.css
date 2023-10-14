@@ -1,0 +1,103 @@
+@font-face {
+    font-family: Dela Gotic One;
+    src: url(./fonts/DelaGothicOne-Regular.ttf);
+}
+
+body {
+    background-color: #0E0B0D;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0rem;
+    overflow: hidden; 
+}
+
+img {
+    max-height: 347px;
+    max-width: 572px;
+}
+
+container {
+    width: 1600px;
+}
+
+.port01 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+icon {
+    font-size: 40px;
+    color: white;
+    font-family: Dela Gotic One;
+    font-style: italic;  
+    z-index: 3; 
+}
+
+h2 {
+    color: white;
+    font-size: 50px;
+    font-family: Dela Gotic One;
+    font-style: italic;  
+    z-index: 3;  
+}
+
+p {
+    font-size: 16px;
+    color: white;
+    width: 323px;
+    font-family: Montserrat;
+    margin-top: 300px;
+}
+
+.clock {
+    margin-left: auto;
+}
+
+.tape {
+    min-width: 100%;
+    position: absolute;
+    left: -10px;
+    z-index: -1;
+}
+
+///
+
+@keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    
+    50% {
+      scale: 1 1.5;
+    }
+    
+    to {
+      rotate: 360deg;
+    }
+  }
+
+#blob {
+    background-color: white;
+    height: 34vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: radial-gradient( #B7FF44, #C5F404);
+    animation: rotate 20s infinite;
+    opacity: 0.8;
+    z-index: -2;
+  }
+
+  #blur {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    backdrop-filter: blur(12vmax);
+    z-index: -1;
+  }
+
